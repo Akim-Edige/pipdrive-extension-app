@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Job Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="jobForm">
+    <div class="form-section">
+        <h2>Client Details</h2>
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="text" id="phoneNumber" placeholder="Phone Number">
+        <input type="email" id="email" placeholder="Email">
+    </div>
+    
+    <div class="form-section">
+        <h2>Job Type</h2>
+        <select id="jobType">
+            <option value="">Select Job Type</option>
+            <option value="installation">Installation Services</option>
+            <option value="repair">Repair Services</option>
+            <option value="maintenance">Maintenance Services</option>
+        </select>
+        <select id="jobSource">
+            <option value="">Select Job Source</option>
+            <option value="GL Pinellas">GL Pinellas</option>
+            <option value="AkimDev">AkimDev</option>
+        </select>
+        <textarea id="jobDescription" placeholder="Job Description (optional)"></textarea>
+    </div>
+    
+    <div class="form-section">
+        <h2>Service Location</h2>
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="state" placeholder="State">
+        <input type="text" id="zipCode" placeholder="Zip Code">
+        <select id="area">
+            <option value="">Select Area</option>
+            <option value="">Tampa</option>
+            <option value="">Astana</option>
+        </select>
+    </div>
+    
+    <div class="form-section" >
+        <h2>Scheduled</h2>
+        <input type="date" id="date">
+        <select id="startTime">
+            <option value="">Start Time</option>
+
+            <option value="00:00">00:00</option>
+            <option value="01:00">01:00</option>
+            <option value="02:00">02:00</option>
+            <option value="03:00">03:00</option>
+            <option value="04:00">04:00</option>
+            <option value="05:00">05:00</option>
+            <option value="06:00">06:00</option>
+            <option value="07:00">07:00</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+            <option value="22:00">22:00</option>
+            <option value="23:00">23:00</option>
+        </select>
+        <select id="endTime">
+            <option value="">End Time</option>
+            <option value="00:00">00:00</option>
+            <option value="01:00">01:00</option>
+            <option value="02:00">02:00</option>
+            <option value="03:00">03:00</option>
+            <option value="04:00">04:00</option>
+            <option value="05:00">05:00</option>
+            <option value="06:00">06:00</option>
+            <option value="07:00">07:00</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+            <option value="22:00">22:00</option>
+            <option value="23:00">23:00</option>
+        </select>
+        <select id="technician">
+            <option value="">Select Technician</option>
+            <option value="Edige">Edige Akimali</option>
+            <option value="Serjan">Serjan Aliev</option>
+        </select>
+    </div>
+    
+    <div class="button-container">
+        <button type="submit" id="submitBtn">Create Job</button>
+        <button type="button" id="saveBtn">Save Info</button>
+    </div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

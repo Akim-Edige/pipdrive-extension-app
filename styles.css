@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.317);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 120px;  /* Adjusted width */
+}
+
+button#submitBtn {
+    background-color: #FFD700;
+    color: black;
+}
+
+button#saveBtn {
+    background-color: #D3D3D3;
+    color: black;
+    margin-left: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.redButton {
+    background-color: red;
+    color: white;
+}
+
+
+.button-container {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+    .button-container {
+        justify-content: space-between;
+    }
+}
+

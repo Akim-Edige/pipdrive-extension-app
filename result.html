@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    window.onload = function() {
+        const link = localStorage.getItem('link'); // 'https://example.com'
+        console.log(link);
+
+    const anchor = document.querySelector('a[href="View Deal"]');
+    anchor.href = link; // Set the href attribute to the retrieved link
+
+
+        localStorage.removeItem('link');
+    };</script>
+
+    <h1>Job is created! <a href = "View Deal">View Deal</a> </h1>
+
+
+    
+    
+</body>
+</html>
